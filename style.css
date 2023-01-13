@@ -1,0 +1,102 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex; 
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.container{
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+    background-color: #66b0f04f;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container img{
+    width:90px;
+    height:90px ;
+    border-radius: 50px;    
+}
+ul{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    gap:50px ;
+}
+li a{text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);background-color: #66b0f0 ;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+li a:hover{background-color: white; color: #66b0f0;
+}
+.mainContainer{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.leftSide{
+    width: 50%;
+    height: 50%;
+    padding: 150px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-size: 17px;
+}
+.rightSide{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.primaryButton{
+    text-decoration: none;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #66B0F0;
+    color: white;
+    transition: all 0.3s linear
+}
+.primaryButton:hover{
+    border: 1px solid;
+    background-color: white;
+    color: #66B0F0;
+}
+.rightImg{
+    animation-name: move;
+    animation-duration:  2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes move {
+    0%{
+        margin-bottom: 0px;
+           }
+    50%{margin-bottom: 50px;}
+    100%{
+        margin-bottom: 0;
+    }       
+}
